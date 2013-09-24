@@ -138,7 +138,7 @@ int writeClimbingFrames()
 int main(int argc, char **argv)
 {
     int retval = -1;
-    fd = open("./output.led", O_CREAT|O_WRONLY );
+    fd = open("./test.led", O_CREAT|O_WRONLY );
     if (fd < 0) goto cleanReturn;
 
     retval = writeHeader(LRTBZ, 50, 1, 8);
